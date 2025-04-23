@@ -1,26 +1,64 @@
-# Wine_Prediction_Streamlit
-Wine Quality Prediction Using K-Nearest Neighbors (KNN)
-This project aims to predict the quality of red wine based on its physicochemical properties using the K-Nearest Neighbors (KNN) algorithm. The dataset used is the Wine Quality Dataset from the UCI Machine Learning Repository.
-Dataset
-The dataset used is the Red Wine Quality Dataset from the UCI Machine Learning Repository. It contains 1,599 samples.
-Methodology
-The project follows these steps:
+🍷 Wine Quality Prediction Using KNN
+🚀 Overview
+This project leverages the K-Nearest Neighbors (KNN) algorithm to predict the quality of red wine based on various physicochemical features. It aims to provide a simple, interactive web application for users to assess wine quality using Streamlit.
 
-Data Collection: The red wine quality dataset is loaded from the UCI repository.
-Data Preprocessing:
-Checked for missing values (none found).
-Standardized the features using StandardScaler to ensure all features contribute equally to the KNN algorithm.
-Exploratory Data Analysis (EDA):
-Visualized the distribution of wine quality scores using a count plot.
-Analyzed correlations between features using a heatmap.
-Model Training:
-Split the data into training (80%) and testing (20%) sets.
-Trained a KNN classifier with n_neighbors=3.
-Model Evaluation:
-Evaluated the model using accuracy and a classification report (precision, recall, F1-score).
-Model Saving:
-Saved the trained KNN model and scaler using pickle for future use.
-Results
-Accuracy: The KNN model achieves an accuracy of approximately [insert accuracy from your output, e.g., 60%] on the test set.
-Classification Report: The model struggles with imbalanced classes (e.g., quality scores 3, 4, 7, and 8 have fewer samples), leading to lower precision and recall for these classes. See the notebook output for the detailed classification report.
-Challenges: The dataset is imbalanced, with most wines rated 5 or 6. This affects the model's performance on minority classes.
+🧪 Dataset
+The dataset used is the Red Wine Quality Dataset from the UCI Machine Learning Repository, consisting of 1,599 samples with features such as acidity, sugar content, pH, alcohol, and more.
+
+✨ Features
+✅ Upload Wine Characteristics – Input physicochemical properties for prediction
+✅ KNN Classification – Uses a trained KNN model with n_neighbors=3
+✅ Scaler Integration – Data is preprocessed using StandardScaler for consistency
+✅ Streamlit Web App – Fast, clean, and user-friendly interface
+✅ Real-Time Prediction – Instant results with predicted wine quality
+🌐 Live Demo
+Check out the deployed app here:
+👉 https://wine-qul-app.streamlit.app/
+📊 Methodology
+Data Preprocessing
+
+No missing values found
+
+Standardized using StandardScaler
+
+Exploratory Data Analysis (EDA)
+
+Count plots for class distribution
+
+Correlation heatmaps between features
+
+Model Training
+
+Data split into 80% training and 20% testing
+
+Trained using KNN (n_neighbors=3)
+
+Evaluation
+
+Accuracy and classification report
+
+Handles class imbalance moderately (most wines are rated 5 or 6)
+
+Model Saving
+
+Pickled both the KNN model and scaler for deployment
+🔍 Results
+Test Accuracy: ~60% (can be improved with more complex models or sampling techniques)
+
+Limitations:
+
+Class imbalance: classes 3, 4, 7, 8 are underrepresented
+
+Basic model, could be enhanced with hyperparameter tuning or ensembles
+
+🧠 Challenges
+Imbalanced dataset
+
+Feature scaling critical for KNN performance
+
+Choosing optimal k value
+📩 Contact
+📧 Md Hasnain Raza – mdhasnainraza463@gmail.com
+🔗 GitHub – @mdhasnainrazaa
+
+⭐ If you found this project useful, consider giving it a star on GitHub! ⭐
